@@ -1,5 +1,12 @@
-
+header{
+  border-bottom: 2px solid #73c2c3;
+}
+.nav{
+  margin: 0 auto;
+  text-align: center;
+}
 .nav ul{
+  display:inline-block;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,7 +24,7 @@
   display: block;
   padding: 14px 16px;
   /* border: 1px solid black; */
-  border-right: 2px solid #f7ecec;
+  /* border-right: 2px solid #f7ecec; */
   text-decoration: none;
   color: white;
   text-align: center;
