@@ -3,3 +3,27 @@ body{
  padding: 0;
  background-color: #8dd1dd;
 }
+.logo{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3{
+  margin-top: 30px;
+}
+h1, h3 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: azure;
+}
+p { 
+  color: azure; 
+  font-family: 'Quicksand',sans-serif; 
+  font-size: 17px; 
+  font-weight: 200; 
+  line-height: 32px; 
+  margin: 0 200px 24px;
+  /* text-align: center; */
+}
