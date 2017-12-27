@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './Navigation.css';
 const Header = () => (
-  <header>
-    <nav>
+  <header className="navigation">
+    <nav className="nav">
       <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>About Helium.js</Link></li>
-        <li><Link to ='/contact'>Contact Us</Link></li>
+        <li><Link className ="links" to='/'>Home</Link></li>
+        <li><Link className ="links" to='/about'>About Helium.js</Link></li>
+        <li><Link className ="links" to ='/contact'>Contact Us</Link></li>
       </ul>
     </nav>
   </header>
