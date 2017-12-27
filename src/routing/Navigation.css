@@ -1,0 +1,33 @@
+
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#8dd1dd;
+}
+
+.nav li{
+  float: left;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+}
+
+.links{
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+/* 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+} */
