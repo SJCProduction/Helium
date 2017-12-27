@@ -16,10 +16,19 @@
 .links{
   display: block;
   padding: 14px 16px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-right: 2px solid #f7ecec;
   text-decoration: none;
   color: white;
   text-align: center;
+}
+
+.links:hover:not(.active) {
+  background-color:#5197ba;
+}
+
+@media screen and (max-width: 600px){
+  .nav ul li {float: none;}
 }
 /* 
 @media screen and (min-width: 600px) {
