@@ -10,6 +10,59 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+.about{
+  font-size: 20px;
+}
+.wrapper{
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px 100px 100px;
+}
+.J{
+  grid-column: span 1;
+  margin: 0;
+  padding-top: 31px;
+  padding-left:278px;
+  font-size: 3em;
+}
+.Jabout{
+  grid-column: span 2;
+  margin: 0;
+  font-size:23px;
+  padding-top: 17px;
+  padding-right:40px;
+}
+.Jabout a{
+  color: yellow;
+}
+.C{
+  grid-column: span 1;
+  margin: 0;
+  padding-top: 31px;
+  padding-left:278px;
+  font-size: 3em;
+}
+.Cabout{
+  border: 1px solid pink;
+  grid-column: span 2;
+  margin: 0;
+  font-size:30px;
+}
+.S{
+  grid-column: span 1;
+  margin: 0;
+  padding-top: 31px;
+  padding-left:278px;
+  font-size: 3em;
+}
+.Sabout{
+  border: 1px solid pink;
+  grid-column: span 2;
+  margin: 0;
+  font-size:30px;
+}
 h3{
   margin-top: 30px;
 }
@@ -18,6 +71,11 @@ h1, h3 {
   text-align: center;
   color: azure;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
 p { 
   color: azure; 
   font-family: 'Quicksand',sans-serif; 
