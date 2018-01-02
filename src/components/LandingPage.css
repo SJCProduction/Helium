@@ -34,7 +34,10 @@ body{
   padding-top: 17px;
   padding-right:40px;
 }
-.Jabout a{
+/* .Jabout a{
+  color: yellow;
+} */
+.wrapper  a{
   color: yellow;
 }
 .C{
@@ -45,10 +48,11 @@ body{
   font-size: 3em;
 }
 .Cabout{
-  border: 1px solid pink;
   grid-column: span 2;
   margin: 0;
-  font-size:30px;
+  font-size:23px;
+  padding-top: 33px;
+  padding-right:40px;
 }
 .S{
   grid-column: span 1;
@@ -58,10 +62,11 @@ body{
   font-size: 3em;
 }
 .Sabout{
-  border: 1px solid pink;
   grid-column: span 2;
   margin: 0;
-  font-size:30px;
+  font-size:23px;
+  padding-top: 33px;
+  padding-right:40px;
 }
 h3{
   margin-top: 30px;
