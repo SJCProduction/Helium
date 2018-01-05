@@ -1,6 +1,5 @@
 const path = require("path");
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -28,35 +27,29 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
+        test: /\.(png|jp(e*)g|svg)$/,  
+        use: [{
             loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ]
+            options: { 
+                limit: 8000, // Convert images < 8kb to base64 strings
+                name: '[hash]-[name].[ext]'
+            } 
+        }]
       },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "react-svg-loader",
-            options: {
-              jsx: true // true outputs JSX tags
-            }
-          }
-        ]
-      }
+      // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: "react-svg-loader",
+      //       options: {
+      //         jsx: true // true outputs JSX tags
+      //       }
+      //     }
+      //   ]
+      // }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: __dirname + '/src/index.html',
-      filename: 'index.html',
-      inject: 'body'
-    }),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.CommonsChunkPlugin('vendor')
   ]

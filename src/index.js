@@ -4,15 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 import helium from 'helium.js/react';
 
-helium(
+ReactDOM.render(
   <BrowserRouter>
-    <App/>
-  </BrowserRouter>, 
-  'root' 
-);
-// ReactDOM.render(
-//   <BrowserRouter>
-//   <App/>
-//   </BrowserRouter>,
-//   document.getElementById("root")
-// )
+  <App/>
+  </BrowserRouter>,
+  document.getElementById("root")
+)
